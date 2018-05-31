@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace sistema_de_tienda
 {
@@ -15,6 +16,11 @@ namespace sistema_de_tienda
         public productos()
         {
             InitializeComponent();
+        }
+
+        private void articulos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
