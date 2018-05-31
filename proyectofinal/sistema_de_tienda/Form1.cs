@@ -16,5 +16,10 @@ namespace sistema_de_tienda
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,23 +12,18 @@ namespace sistema_de_tienda
     using System;
     using System.Collections.Generic;
     
-    public partial class cliente
+    public partial class categoria
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public cliente()
+        public categoria()
         {
-            this.facturas = new HashSet<factura>();
+            this.productos = new HashSet<producto>();
         }
     
-        public int id_cliente { get; set; }
-        public string nombre { get; set; }
-        public string apellido { get; set; }
-        public string dni { get; set; }
-        public string direccion { get; set; }
-        public string email { get; set; }
-        public string telefono { get; set; }
+        public int id_categoria { get; set; }
+        public string categoria1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<factura> facturas { get; set; }
+        public virtual ICollection<producto> productos { get; set; }
     }
 }
